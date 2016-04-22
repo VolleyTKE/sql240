@@ -43,3 +43,5 @@ order by sum_line_item_amt desc;
 select account_number, sum(line_item_amt) as sum_line_item
 from invoice_line_items
 group by rollup(account_number);
+
+--lab 3 q #7
